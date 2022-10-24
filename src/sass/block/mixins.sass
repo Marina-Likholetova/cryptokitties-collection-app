@@ -1,0 +1,48 @@
+@mixin mob
+    @media (min-width: 320px) 
+        @content
+
+@mixin mob-md 
+    @media (min-width: 480px)
+        @content
+    
+@mixin mob-lg
+    @media (min-width: 572px) 
+        @content
+
+@mixin tablet
+    @media (min-width: 768px) 
+        @content
+
+@mixin ipad
+    @media (min-width: 1024px) 
+        @content
+
+@mixin desktop 
+    @media (min-width: 1280px)
+        @content
+
+@mixin desktop-sd
+    @media (min-width: 1440px)
+        @content
+
+@mixin desktop-hd
+    @media (min-width: 1920px)
+        @content
+
+
+@mixin btn-style 
+    display: block
+    border-radius: 5px
+    background-color: $secondary-bg-color
+    padding: $btn-padding
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    -o-text-overflow: ellipsis
+    border-bottom: 1px solid transparent
+    font-weight: 600
+    box-shadow: $box-shadow-main
+    @include flex-space-between
+
+    

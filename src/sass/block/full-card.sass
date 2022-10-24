@@ -1,0 +1,43 @@
+.full-card-top 
+    column-gap: 10px
+    margin: 2em 0
+    @include flx-align-items-cen 
+
+
+.full-card-item 
+    padding: 20px 10px
+    display: grid
+    grid-template-columns: 1fr
+    grid-column-gap: 2em
+    margin: 20px 0
+    border-radius: $border-radius
+    background-color: #f7f7f7
+    justify-items: center
+    
+    div:first-child 
+        background-color: #efd7f6
+        border-radius: $border-radius
+        max-width: 300px
+        min-height: 300px
+        width: 100%
+        height: 100%
+
+    @include mob-md 
+        grid-template-columns: 1fr 1fr
+
+
+.info-item 
+    padding-top: 20px
+    justify-self: flex-start
+
+
+.btn-back 
+    border: none
+    outline: none
+    column-gap: 5px
+    color: $main-light
+    @include flx-align-items-cen 
+    @include btn-style
+
+    &:hover 
+        background-color: $main-hover-bg

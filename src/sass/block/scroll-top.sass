@@ -1,0 +1,33 @@
+.top-to-btn 
+    position: relative
+
+.top-to-icon 
+    position: fixed
+    z-index: 20
+    bottom: 50px
+    right: 20px
+    font-size: 4em
+    color: #6d5ea7
+    animation: movetopeffect 5s infinite
+    cursor: pointer
+
+    &:hover 
+        animation: scaleeffect 1s
+        transform: scale(1.5)
+
+
+@keyframes movetopeffect 
+    0% 
+        transform: translateY(0px)
+    50% 
+        transform: translateY(20px)
+    100% 
+        transform: translateY(0px)
+    
+
+@keyframes scaleeffect 
+    0% 
+        transform: scale(1)
+    100% 
+        transform: scale(1.5)
+    
